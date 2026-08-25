@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 1. Beranda (Homepage) -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/hero/hero.webp</image:loc>
+      <image:title>Kontraktor Surabaya Jasa Bangun Rumah dan Bangunan Komersial</image:title>
+      <image:caption>Jasa kontraktor bangun rumah profesional, renovasi, dan arsitektur di Surabaya</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 2. Layanan (Service Hub) -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/layanan.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 3. Blog (Blog Index) -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 4. Galeri Portofolio -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/galeri.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 5. Tentang Kami -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/tentang-kami.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ════ SUB-LAYANAN (SERVICE DETAIL PAGES) ════ -->
+
+  <!-- 6. Jasa Arsitek Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/layanan/jasa-arsitek-surabaya.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/layanan/arsitektur-rumah-mewah-surabaya.webp</image:loc>
+      <image:title>Jasa Arsitek Surabaya &amp; Desain Gambar Kerja DED</image:title>
+    </image:image>
+  </url>
+
+  <!-- 7. Kontraktor Rumah Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/layanan/kontraktor-rumah-surabaya.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/layanan/pembangunan-rumah-modern-surabaya.webp</image:loc>
+      <image:title>Jasa Kontraktor Bangun Rumah Surabaya 1 dan 2 Lantai</image:title>
+    </image:image>
+  </url>
+
+  <!-- 8. Kontraktor Bangunan Komersial -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/layanan/kontraktor-bangunan-surabaya.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/layanan/fasad-gedung-komersial-modern.webp</image:loc>
+      <image:title>Jasa Kontraktor Bangunan Gedung dan Ruko Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 9. Jasa Renovasi Bangunan -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/layanan/jasa-renovasi-surabaya.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/layanan/proses-renovasi-rumah-surabaya.webp</image:loc>
+      <image:title>Jasa Renovasi Rumah dan Bangunan Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 10. Jasa Desain Interior -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/layanan/jasa-desain-interior-surabaya.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/layanan/interior-ruang-tamu-modern.webp</image:loc>
+      <image:title>Jasa Desain Interior Custom Rumah &amp; Usaha Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 11. RAB & Estimasi Biaya Bangun -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/layanan/rab-estimasi-biaya-surabaya.html</loc>
+    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/layanan/dokumen-rencana-anggaran-biaya.webp</image:loc>
+      <image:title>Jasa Hitung RAB Bangunan &amp; Estimasi Biaya Konstruksi Transparan</image:title>
+    </image:image>
+  </url>
+
+  <!-- ════ ARTIKEL BLOG REAL (PUBLISHED ARTICLES) ════ -->
+
+  <!-- 12. Artikel 1: 15 Desain Rumah Minimalis Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/inspirasi-desain-rumah-minimalis-surabaya.html</loc>
+    <lastmod>2026-08-26T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/fasad-rumah-minimalis-surabaya-timur.webp</image:loc>
+      <image:title>15 Desain Rumah Minimalis Surabaya Timur Hemat Lahan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/denah-rumah-hemat-lahan-void-tengah.webp</image:loc>
+      <image:title>Denah rumah dua lantai hemat lahan dengan void tengah</image:title>
+    </image:image>
+  </url>
+
+  <!-- 13. Artikel 2: 7 Contoh Rumah Minimalis Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/7-contoh-rumah-minimalis-surabaya-sukses.html</loc>
+    <lastmod>2026-08-26T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rumah-minimalis-dua-lantai-hasil-bangun-surabaya.webp</image:loc>
+      <image:title>7 Contoh Rumah Minimalis Modern Hasil Bangun Kontraktor Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/courtyard-rumah-satu-lantai-surabaya.webp</image:loc>
+      <image:title>Taman dalam atau courtyard pada rumah satu lantai minimalis di Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 14. Artikel 3: Tren Desain Bangunan Komersial Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/tren-bangunan-komersial-surabaya.html</loc>
+    <lastmod>2026-08-26T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/fasad-kaca-bangunan-komersial-surabaya.webp</image:loc>
+      <image:title>Tren Desain Bangunan Komersial Modern di Pusat Kota Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/interior-ruang-usaha-pencahayaan-alami-surabaya.webp</image:loc>
+      <image:title>Interior ruang usaha dengan pencahayaan alami dari skylight di bangunan komersial Surabaya</image:title>
+    </image:image>
+  </url>
+
+</urlset>

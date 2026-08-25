@@ -2825,6 +2825,24 @@ section {
   text-justify: inter-word;
 }
 
+.blog-card-author {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--gray-700);
+  font-weight: 600;
+}
+
+.blog-card-author img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--gold);
+  display: block;
+}
+
 .blog-card-footer {
   display: flex;
   align-items: center;
