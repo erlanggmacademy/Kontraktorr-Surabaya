@@ -62,15 +62,30 @@
         "name": "Jasa Arsitek Surabaya",
         "serviceType": "Architectural Design",
         "provider": {
-          "@type": "LocalBusiness",
+          "@type": ["LocalBusiness", "GeneralContractor", "ProfessionalService"],
+          "@id": "https://kontraktorsurabaya.biz.id/#business",
           "name": "Kontraktor Surabaya",
+          "alternateName": "PT Kontraktor Surabaya Jaya",
           "url": "https://kontraktorsurabaya.biz.id/",
+          "logo": "https://kontraktorsurabaya.biz.id/assets/img/logo-header.webp",
+          "image": [
+            "https://kontraktorsurabaya.biz.id/assets/img/hero/hero.webp",
+            "https://kontraktorsurabaya.biz.id/assets/img/logo-header.webp"
+          ],
           "telephone": "+62088989643555",
+          "priceRange": "Rp 3.500.000 - Rp 10.000.000 per m²",
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Jl. Raya Rungkut Madya No. 88, Rungkut",
             "addressLocality": "Surabaya Timur",
             "addressRegion": "Jawa Timur",
+            "postalCode": "60293",
             "addressCountry": "ID"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -7.3195,
+            "longitude": 112.7842
           }
         },
         "areaServed": ["Surabaya", "Surabaya Timur", "Sidoarjo", "Gresik", "Mojokerto", "Madura"],
