@@ -42,14 +42,25 @@
   <link rel="stylesheet" href="assets/css/main.min.css">
 
   <!-- Non-Critical Vendor CSS (Deferred Loading to Eliminate Render-Blocking) -->
-  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css"></noscript>
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  </noscript>
   <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css"></noscript>
-  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css"></noscript>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+  </noscript>
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+  </noscript>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </noscript>
 
   <!-- Schema Markup JSON-LD -->
   <script type="application/ld+json">
@@ -311,23 +322,23 @@
                 melainkan wujud investasi hidup bernilai tinggi yang harus berdiri kokoh dan tahan lama.
               </p>
 
-              <div class="row g-3 mt-3 pt-2">
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-center gap-3 p-3 bg-white rounded-3 border">
-                    <i class="bi bi-shield-fill-check text-maroon fs-2 flex-shrink-0"></i>
-                    <div class="flex-grow-1 text-center">
-                      <div class="fw-bold text-maroon-dark">Garansi Resmi</div>
-                      <small class="text-muted">Struktur &amp; Pemeliharaan</small>
-                    </div>
+              <div class="about-mini-trust-grid mt-3 pt-2">
+                <div class="about-mini-trust-card d-flex align-items-center gap-3 p-3 bg-white rounded-4 border shadow-sm">
+                  <div class="about-mini-icon-circle">
+                    <i class="bi bi-shield-fill-check text-maroon"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="fw-bold text-maroon-dark">Garansi Resmi</div>
+                    <small class="text-muted">Struktur &amp; Pemeliharaan</small>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-center gap-3 p-3 bg-white rounded-3 border">
-                    <i class="bi bi-journal-check text-maroon fs-2 flex-shrink-0"></i>
-                    <div class="flex-grow-1 text-center">
-                      <div class="fw-bold text-maroon-dark">100% Transparan</div>
-                      <small class="text-muted">RAB Jelas Tanpa Biaya Siluman</small>
-                    </div>
+                <div class="about-mini-trust-card d-flex align-items-center gap-3 p-3 bg-white rounded-4 border shadow-sm">
+                  <div class="about-mini-icon-circle">
+                    <i class="bi bi-journal-check text-maroon"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="fw-bold text-maroon-dark">100% Transparan</div>
+                    <small class="text-muted">RAB Jelas Tanpa Biaya Siluman</small>
                   </div>
                 </div>
               </div>
@@ -644,59 +655,109 @@
       <div class="container py-lg-4">
 
         <div class="text-center mb-5" data-aos="fade-up">
-          <span class="section-label">Alur Pengerjaan</span>
+          <span class="section-label"><i class="bi bi-diagram-3-fill me-1"></i> Alur Pengerjaan</span>
           <h2 class="section-title">
             6 Tahapan <span>Proses Kerja</span> Profesional
           </h2>
           <div class="divider-maroon mx-auto"></div>
           <p class="section-desc mx-auto">
-            Dari diskusi awal hingga serah terima kunci, setiap langkah dirancang sistematis demi hasil terbaik.
+            Dari diskusi awal hingga serah terima kunci, setiap langkah dirancang sistematis, transparan, dan terukur demi hasil konstruksi terbaik.
           </p>
         </div>
 
         <div class="proses-steps">
+          <!-- Step 1 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="0">
-            <div class="proses-num" aria-hidden="true">1</div>
-            <h3 class="proses-title">Konsultasi</h3>
-            <p class="proses-desc">Sampaikan kebutuhan ruang, visi arsitektur, dan bujet proyek Anda secara terbuka
-              bersama tim kami.</p>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">01</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 1</span>
+            <h3 class="proses-title">Konsultasi Awal</h3>
+            <p class="proses-desc">Diskusi kebutuhan ruang, konsep desain, dan rencana anggaran proyek.</p>
           </div>
+
+          <!-- Step 2 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="100">
-            <div class="proses-num" aria-hidden="true">2</div>
-            <h3 class="proses-title">Survey &amp; Konsep</h3>
-            <p class="proses-desc">Pengukuran lahan langsung di lapangan dan penyusunan konsep denah tata ruang
-              fungsional.</p>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">02</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 2</span>
+            <h3 class="proses-title">Survey Lokasi</h3>
+            <p class="proses-desc">Pengukuran presisi lahan, analisa kontur tanah, dan orientasi bukaan.</p>
           </div>
+
+          <!-- Step 3 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="200">
-            <div class="proses-num" aria-hidden="true">3</div>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">03</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 3</span>
             <h3 class="proses-title">Desain &amp; 3D</h3>
-            <p class="proses-desc">Pembuatan visual 3D realistis, gambar kerja teknis, struktur sipil, dan MEP secara
-              menyeluruh.</p>
+            <p class="proses-desc">Visualisasi 3D realistis, denah ruang, dan gambar kerja DED lengkap.</p>
           </div>
+
+          <!-- Step 4 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="300">
-            <div class="proses-num" aria-hidden="true">4</div>
-            <h3 class="proses-title">RAB &amp; Kontrak</h3>
-            <p class="proses-desc">Penyusunan Rencana Anggaran Biaya transparan, jadwal pengerjaan (Kurva-S), dan surat
-              kontrak resmi.</p>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">04</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 4</span>
+            <h3 class="proses-title">RAB &amp; SPK</h3>
+            <p class="proses-desc">Rincian anggaran biaya transparan, jadwal Kurva-S, dan kontrak resmi.</p>
           </div>
+
+          <!-- Step 5 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="400">
-            <div class="proses-num" aria-hidden="true">5</div>
-            <h3 class="proses-title">Konstruksi</h3>
-            <p class="proses-desc">Pengerjaan fisik diawasi insinyur sipil berpengalaman dengan laporan berkala foto dan
-              video.</p>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">05</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 5</span>
+            <h3 class="proses-title">Konstruksi Fisik</h3>
+            <p class="proses-desc">Pembangunan material SNI diawasi langsung oleh insinyur sipil.</p>
           </div>
+
+          <!-- Step 6 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="500">
-            <div class="proses-num" aria-hidden="true">6</div>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">06</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 6</span>
             <h3 class="proses-title">Serah Terima</h3>
-            <p class="proses-desc">Quality control menyeluruh, penyerahan kunci, dokumen as-built drawing, dan
-              sertifikat garansi.</p>
+            <p class="proses-desc">Quality control akhir, penyerahan kunci, dan sertifikat garansi resmi.</p>
           </div>
         </div>
 
         <!-- Swipe Hint Indicator (Mobile Only) -->
         <div class="proses-swipe-hint d-md-none text-center text-muted small mt-3">
-          <i class="bi bi-arrow-left-right text-maroon me-1"></i> Geser ke samping untuk melihat langkah selanjutnya
-          &rarr;
+          <i class="bi bi-arrow-left-right text-maroon me-1"></i> Geser ke samping untuk melihat langkah selanjutnya &rarr;
+        </div>
+
+        <!-- Bottom Trust & Micro-CTA Bar -->
+        <div class="proses-bottom-trust" data-aos="fade-up" data-aos-delay="200">
+          <div class="proses-bottom-text">
+            <i class="bi bi-patch-check-fill text-maroon"></i>
+            <div>
+              <span class="d-block fw-bold text-maroon-dark">Ingin mulai dari konsultasi awal dan survey lokasi gratis?</span>
+              <small class="text-muted">Tim teknis Kontraktor Surabaya siap mengunjungi lokasi proyek Anda di Surabaya, Sidoarjo, Gresik, Mojokerto &amp; Madura.</small>
+            </div>
+          </div>
+          <a href="https://wa.me/62088989643555?text=Halo%2C+saya+ingin+konsultasi+dan+survey+lokasi+proyek"
+            class="btn-gold d-inline-flex align-items-center gap-2 flex-shrink-0" id="tentang-survey-cta" target="_blank"
+            rel="noopener noreferrer">
+            <i class="bi bi-whatsapp"></i> Jadwalkan Survey Gratis
+          </a>
         </div>
 
       </div>
@@ -810,9 +871,12 @@
 
           <h3 class="footer-heading" style="margin-top:1.5rem;">Artikel Populer</h3>
           <ul class="footer-links">
-            <li><a href="blog/inspirasi-desain-rumah-minimalis-surabaya.html"><i class="bi bi-chevron-right"></i> 15 Desain Rumah Minimalis</a></li>
-            <li><a href="blog/7-contoh-rumah-minimalis-surabaya-sukses.html"><i class="bi bi-chevron-right"></i> 7 Contoh Rumah Minimalis</a></li>
-            <li><a href="blog/tren-bangunan-komersial-surabaya.html"><i class="bi bi-chevron-right"></i> Tren Bangunan Komersial</a></li>
+            <li><a href="blog/inspirasi-desain-rumah-minimalis-surabaya.html"><i class="bi bi-chevron-right"></i> 15
+                Desain Rumah Minimalis</a></li>
+            <li><a href="blog/7-contoh-rumah-minimalis-surabaya-sukses.html"><i class="bi bi-chevron-right"></i> 7
+                Contoh Rumah Minimalis</a></li>
+            <li><a href="blog/tren-bangunan-komersial-surabaya.html"><i class="bi bi-chevron-right"></i> Tren Bangunan
+                Komersial</a></li>
           </ul>
         </div>
 

@@ -42,14 +42,25 @@
   <link rel="stylesheet" href="assets/css/main.min.css">
 
   <!-- Non-Critical Vendor CSS (Deferred Loading to Eliminate Render-Blocking) -->
-  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css"></noscript>
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  </noscript>
   <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css"></noscript>
-  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css"></noscript>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+  </noscript>
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+  </noscript>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </noscript>
   <!-- Schema Markup JSON-LD -->
   <script type="application/ld+json">
   {
@@ -321,8 +332,7 @@
   <!-- NAVBAR -->
   <nav id="navbar" class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Navigasi utama">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html"
-        aria-label="Kontraktor Surabaya - Beranda">
+      <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Kontraktor Surabaya - Beranda">
         <img src="assets/img/logo-header.webp" alt="Logo Kontraktor Surabaya" class="logo-img" width="160" height="54"
           fetchpriority="high" onerror="this.style.display='none'">
       </a>
@@ -337,11 +347,12 @@
 
       <!-- Offcanvas Navigation Drawer (Slide from Right on Mobile, Inline on Desktop) -->
       <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
-        
+
         <!-- Mobile Drawer Header -->
         <div class="offcanvas-header d-flex d-lg-none align-items-center justify-content-between">
           <span class="drawer-title fw-bold text-maroon fs-6 mb-0" id="navOffcanvasLabel">Menu Navigasi</span>
-          <button type="button" class="btn-drawer-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Tutup navigasi">
+          <button type="button" class="btn-drawer-close shadow-none" data-bs-dismiss="offcanvas"
+            aria-label="Tutup navigasi">
             <i class="bi bi-x-lg"></i>
           </button>
         </div>
@@ -361,9 +372,11 @@
                 Layanan
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropLayanan">
-                <li><a class="dropdown-item" href="layanan.html"><i
-                      class="bi bi-grid-fill me-2 text-maroon"></i>Semua Layanan</a></li>
-                <li><hr class="dropdown-divider my-1"></li>
+                <li><a class="dropdown-item" href="layanan.html"><i class="bi bi-grid-fill me-2 text-maroon"></i>Semua
+                    Layanan</a></li>
+                <li>
+                  <hr class="dropdown-divider my-1">
+                </li>
                 <li><a class="dropdown-item" href="layanan/jasa-arsitek-surabaya.html"><i
                       class="bi bi-pencil-square me-2 text-maroon"></i>Jasa Arsitek</a></li>
                 <li><a class="dropdown-item" href="layanan/kontraktor-rumah-surabaya.html"><i
@@ -411,30 +424,37 @@
         <!-- Left: SEO Text & Actions -->
         <div class="col-lg-6 hero-content" data-aos="fade-right">
           <div class="hero-badge">
-            <i class="bi bi-geo-alt-fill"></i>
-            Berbasis Surabaya Timur, Jawa Timur
+            <i class="bi bi-shield-fill-check text-gold"></i>
+            <span>Kontraktor Bergaransi Resmi</span>
           </div>
 
           <h1 class="hero-title">
-            Jasa Kontraktor <span class="highlight">Surabaya</span> Terpercaya untuk Pembangunan &amp; Renovasi
+            Jasa Kontraktor <span class="highlight">Surabaya</span> Profesional &amp; Terpercaya
           </h1>
 
           <p class="hero-desc">
-            Berbasis di Surabaya Timur, kami melayani kebutuhan konstruksi untuk proyek rumah,
-            bangunan, renovasi, arsitektur, dan interior di Surabaya serta wilayah sekitarnya.
+            Solusi satu pintu untuk pembangunan rumah tinggal, gedung komersial, arsitektur, dan renovasi dengan
+            transparansi RAB 100%, material SNI, serta pengawasan insinyur sipil berpengalaman.
           </p>
 
-          <div class="hero-location">
-            <span><i class="bi bi-pin-map-fill text-gold me-1"></i> Melayani: Surabaya &bull; Sidoarjo &bull; Gresik &bull; Mojokerto &bull; Madura</span>
+          <div class="hero-location-chips">
+            <span class="hero-chip-label"><i class="bi bi-pin-map-fill text-gold me-1"></i> Wilayah Layanan:</span>
+            <div class="hero-chips-wrap">
+              <span class="hero-city-chip">Surabaya</span>
+              <span class="hero-city-chip">Sidoarjo</span>
+              <span class="hero-city-chip">Gresik</span>
+              <span class="hero-city-chip">Mojokerto</span>
+              <span class="hero-city-chip">Madura</span>
+            </div>
           </div>
 
-          <div class="d-flex flex-wrap gap-3">
+          <div class="d-flex flex-wrap gap-3 hero-action-btns">
+            <a id="hero-cta-portfolio" href="#portfolio" class="btn-hero-outline">
+              <i class="bi bi-images"></i> Lihat Proyek Kami
+            </a>
             <a id="hero-cta-wa" href="https://wa.me/62088989643555?text=Halo%2C+saya+ingin+konsultasi+proyek"
               class="btn-hero-cta" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-whatsapp"></i> KONSULTASI SEKARANG
-            </a>
-            <a id="hero-cta-portfolio" href="#portfolio" class="btn-hero-outline">
-              <i class="bi bi-images"></i> Lihat Proyek Kami
             </a>
           </div>
         </div>
@@ -472,13 +492,16 @@
       <div class="container">
         <div class="row align-items-center gy-5 gx-lg-5">
 
-          <!-- Image -->
+          <!-- Image & Trust Badges -->
           <div class="col-lg-5" data-aos="fade-right">
             <div class="about-img-wrap">
+              <div class="about-badge-trust" data-aos="fade-down" data-aos-delay="200">
+                <i class="bi bi-patch-check-fill text-gold"></i>
+                <span>150+ Proyek Sukses</span>
+              </div>
               <div class="about-img-main">
-                <img src="assets/img/about/about.webp"
-                  alt="Tim profesional Kontraktor Surabaya bekerja di studio desain" width="500" height="500"
-                  loading="lazy" onerror="this.src='assets/img/hero/hero.webp'" />
+                <img src="assets/img/about/about.webp" alt="Tim arsitek dan insinyur profesional Kontraktor Surabaya"
+                  width="500" height="500" loading="lazy" onerror="this.src='assets/img/hero/hero.webp'" />
               </div>
               <div class="about-badge-float" data-aos="zoom-in" data-aos-delay="300">
                 <div class="abyear">10+</div>
@@ -487,48 +510,33 @@
             </div>
           </div>
 
-          <!-- Content -->
+          <!-- Content (Condensed & Focused from tentang-kami.html) -->
           <div class="col-lg-7" data-aos="fade-left">
             <div class="about-content ps-lg-3 ps-xl-4">
-              <span class="section-label">Tentang Kami</span>
+              <span class="section-label"><i class="bi bi-building-check me-1"></i>Tentang Kami</span>
               <h2 class="section-title" id="about-heading">
-                Mengapa Memilih <span>Kontraktor Surabaya?</span>
+                Membangun dengan <span>Presisi, Transparansi &amp; Integritas</span>
               </h2>
-              <p class="section-desc" style="max-width:100%;">
-                Kontraktor Surabaya adalah perusahaan jasa arsitek dan kontraktor profesional
-                yang berdedikasi menghadirkan solusi dari desain hingga pembangunan.
-                Melayani Surabaya, Sidoarjo, Gresik, Mojokerto, Madura dan seluruh Jawa Timur dengan pendekatan yang
-                detail, terencana, dan berorientasi pada kepuasan klien.
+
+              <p class="about-lead">
+                <strong>Kontraktor Surabaya</strong> adalah perusahaan jasa konstruksi dan konsultan arsitektur
+                terintegrasi satu pintu (<em>one-stop solution</em>) berbasis di <strong>Surabaya Timur</strong> yang
+                melayani seluruh kawasan Jawa Timur.
               </p>
 
-              <ul class="about-list" aria-label="Keunggulan Kontraktor Surabaya">
-                <li>
-                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
-                  <span>Tim arsitek dan kontraktor berpengalaman dengan track record 150+ proyek beragam</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
-                  <span>Proses terstruktur: Konsultasi → Desain → RAB → Pelaksanaan → Quality Control</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
-                  <span>Transparansi penuh dalam setiap tahap proyek, dari biaya hingga timeline</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
-                  <span>Melayani berbagai jenis bangunan: rumah, ruko, kantor, kafe, villa, dan gedung</span>
-                </li>
-                <li>
-                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
-                  <span>Konsultasi awal gratis — ceritakan rencana proyek Anda tanpa komitmen</span>
-                </li>
-              </ul>
+              <p class="section-desc mb-4">
+                Didukung oleh tim arsitek berlisensi, insinyur sipil berpengalaman, dan pengawasan mutu ketat di
+                lapangan, kami memastikan setiap pembangunan rumah tinggal maupun gedung komersial berdiri kokoh, tepat
+                waktu, dan bergaransi resmi.
+              </p>
 
-              <div class="about-btn-wrap">
+              <!-- CTA Actions -->
+              <div class="d-flex flex-wrap align-items-center gap-3">
                 <a href="tentang-kami.html" class="btn-maroon" id="about-link-btn">
-                  Lihat Selengkapnya <i class="bi bi-arrow-right"></i>
+                  Selengkapnya <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
+
             </div>
           </div>
 
@@ -537,151 +545,200 @@
     </section><!-- /about -->
 
 
-    <!-- ══ 3. WHY CHOOSE (KEUNGGULAN - MODERN 2X2 BENTO GRID) ═════════════════ -->
+    <!-- ══ 3. WHY CHOOSE (MENGAPA MEMILIH KAMI - CLEAN 4-COLUMN CARDS) ═════════ -->
     <section id="why-choose" aria-labelledby="why-heading">
       <div class="container">
-        <div class="row align-items-center gy-5">
 
-          <!-- Left Column -->
-          <div class="col-lg-5" data-aos="fade-right">
-            <span class="section-label"><i class="bi bi-patch-check-fill text-maroon"></i> Keunggulan Utama</span>
-            <h2 class="section-title" id="why-heading">
-              Standar Mutu &amp; <span>Jaminan Kualitas</span> Konstruksi
-            </h2>
-            <p class="section-desc mb-4">
-              Setiap proyek dikerjakan dengan standar presisi tinggi, material bersertifikat SNI, timeline terukur,
-              serta transparansi penuh tanpa biaya siluman dari awal hingga serah terima kunci.
-            </p>
+        <!-- Centered Header -->
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="section-label mb-2"><i class="bi bi-patch-check-fill me-1"></i> Keunggulan Utama</span>
+          <h2 class="section-title" id="why-heading">
+            Mengapa Memilih Kami Sebagai <span>Mitra Konstruksi?</span>
+          </h2>
+          <div class="divider-maroon mx-auto"></div>
+          <p class="section-desc mx-auto" style="max-width: 680px;">
+            Kepercayaan ratusan klien dibangun dari kualitas struktur standar SNI, transparansi anggaran, ketepatan
+            waktu, dan garansi resmi.
+          </p>
+        </div>
 
-            <div class="why-highlights mb-4">
-              <div class="why-highlight-pill"><i class="bi bi-check-circle-fill"></i> 150+ Proyek Terselesaikan</div>
-              <div class="why-highlight-pill"><i class="bi bi-check-circle-fill"></i> Garansi Struktur &amp;
-                Pemeliharaan Resmi</div>
-              <div class="why-highlight-pill"><i class="bi bi-check-circle-fill"></i> 100% Transparansi RAB Tanpa Biaya
-                Siluman</div>
-            </div>
+        <!-- 4 Clean Cards Row -->
+        <div class="row g-4 why-simple-grid">
 
-            <div class="why-btn-wrap">
-              <a href="https://wa.me/62088989643555?text=Halo%2C+saya+ingin+konsultasi+proyek+bangunan"
-                class="btn-gold mt-2 d-inline-flex" data-wa="layanan" id="why-wa-btn" target="_blank"
-                rel="noopener noreferrer">
-                <i class="bi bi-whatsapp"></i> Mulai Konsultasi Gratis
-              </a>
+          <!-- Card 1 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="why-simple-card">
+              <div class="why-simple-icon">
+                <i class="bi bi-headset"></i>
+              </div>
+              <h3 class="why-simple-title">Konsultasi Gratis</h3>
+              <p class="why-simple-desc">
+                Tim kami siap membantu mendiskusikan konsep rancang bangun dan estimasi terbaik sesuai bujet proyek
+                Anda.
+              </p>
             </div>
           </div>
 
-          <!-- Right Column: 2x2 Interactive Bento Grid -->
-          <div class="col-lg-7" data-aos="fade-left">
-            <div class="why-feature-grid">
-
-              <!-- Card 01 -->
-              <div class="why-feature-card">
-                <span class="why-card-number" aria-hidden="true">01</span>
-                <div class="why-card-top">
-                  <div class="why-icon-box"><i class="bi bi-rulers"></i></div>
-
-                </div>
-                <h3 class="why-card-title">Desain Sesuai Kebutuhan</h3>
-                <p class="why-card-desc">Setiap desain arsitektur dan denah dibuat spesifik mengikuti gaya hidup, fungsi
-                  ruang, dan bujet investasi Anda tanpa template generik.</p>
+          <!-- Card 2 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-simple-card">
+              <div class="why-simple-icon">
+                <i class="bi bi-journal-check"></i>
               </div>
+              <h3 class="why-simple-title">100% Transparan</h3>
+              <p class="why-simple-desc">
+                Rincian RAB dan BoQ terbuka per item pekerjaan tanpa markup sepihak dan bebas dari biaya siluman.
+              </p>
+            </div>
+          </div>
 
-              <!-- Card 02 -->
-              <div class="why-feature-card">
-                <span class="why-card-number" aria-hidden="true">02</span>
-                <div class="why-card-top">
-                  <div class="why-icon-box"><i class="bi bi-shield-fill-check"></i></div>
-
-                </div>
-                <h3 class="why-card-title">Konstruksi Berkualitas</h3>
-                <p class="why-card-desc">Material bersertifikat SNI pilihan dengan supervisi ketat insinyur sipil dan
-                  mandor berpengalaman di setiap tahapan pengerjaan.</p>
+          <!-- Card 3 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-simple-card">
+              <div class="why-simple-icon">
+                <i class="bi bi-shield-fill-check"></i>
               </div>
+              <h3 class="why-simple-title">Material Standar SNI</h3>
+              <p class="why-simple-desc">
+                Struktur terjamin kokoh dengan pemilihan material bersertifikasi SNI serta pengawasan rutin insinyur
+                sipil.
+              </p>
+            </div>
+          </div>
 
-              <!-- Card 03 -->
-              <div class="why-feature-card">
-                <span class="why-card-number" aria-hidden="true">03</span>
-                <div class="why-card-top">
-                  <div class="why-icon-box"><i class="bi bi-calendar-check-fill"></i></div>
-
-                </div>
-                <h3 class="why-card-title">Timeline Terencana</h3>
-                <p class="why-card-desc">Jadwal pelaksanaan terinci dan realistis (Time Schedule Curve-S) dengan
-                  komitmen penuh menyelesaikan proyek tepat waktu.</p>
+          <!-- Card 4 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-simple-card">
+              <div class="why-simple-icon">
+                <i class="bi bi-award-fill"></i>
               </div>
-
-              <!-- Card 04 -->
-              <div class="why-feature-card">
-                <span class="why-card-number" aria-hidden="true">04</span>
-                <div class="why-card-top">
-                  <div class="why-icon-box"><i class="bi bi-chat-square-text-fill"></i></div>
-
-                </div>
-                <h3 class="why-card-title">Komunikasi Transparan</h3>
-                <p class="why-card-desc">Update progres berkala lengkap foto &amp; video dokumentasi lapangan. Anda
-                  selalu terinfo tanpa harus bertanya-tanya.</p>
-              </div>
-
+              <h3 class="why-simple-title">Garansi Resmi</h3>
+              <p class="why-simple-desc">
+                Jaminan sertifikat garansi struktur dan retensi pemeliharaan paska serah terima untuk ketenangan
+                investasi Anda.
+              </p>
             </div>
           </div>
 
         </div>
+
       </div>
     </section><!-- /why-choose -->
 
 
-    <!-- ══ 4. PROSES KERJA (6 HORIZONTAL CARDS) ════════════════════════════════ -->
+    <!-- ══ 4. PROSES KERJA (6-STAGE ROADMAP GRID) ═════════════════════════════ -->
     <section id="proses" aria-labelledby="proses-heading">
       <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
-          <span class="section-label">Cara Kerja</span>
+          <span class="section-label"><i class="bi bi-diagram-3-fill me-1"></i> Alur Pengerjaan</span>
           <h2 class="section-title" id="proses-heading">
-            Proses Kerja <span>Kami</span>
+            6 Tahapan <span>Proses Kerja</span> Profesional
           </h2>
           <div class="divider-maroon mx-auto"></div>
           <p class="section-desc mx-auto">
-            Alur kerja yang terstruktur memastikan setiap proyek berjalan lancar, tepat anggaran,
-            dan tepat waktu dari konsultasi awal hingga serah terima kunci.
+            Dari diskusi awal hingga serah terima kunci, setiap langkah dirancang sistematis, transparan, dan terukur
+            demi hasil konstruksi terbaik.
           </p>
         </div>
 
         <div class="proses-steps">
+          <!-- Step 1 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="0">
-            <div class="proses-num" aria-hidden="true">1</div>
-            <h3 class="proses-title">Konsultasi</h3>
-            <p class="proses-desc">Diskusikan kebutuhan, visi ruang, dan anggaran proyek Anda bersama tim kami.</p>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">01</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 1</span>
+            <h3 class="proses-title">Konsultasi Awal</h3>
+            <p class="proses-desc">Diskusi kebutuhan ruang, konsep desain, dan rencana anggaran proyek.</p>
           </div>
+
+          <!-- Step 2 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="100">
-            <div class="proses-num" aria-hidden="true">2</div>
-            <h3 class="proses-title">Konsep</h3>
-            <p class="proses-desc">Survey lokasi &amp; penyusunan konsep denah dan tata letak yang fungsional.</p>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">02</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 2</span>
+            <h3 class="proses-title">Survey Lokasi</h3>
+            <p class="proses-desc">Pengukuran presisi lahan, analisa kontur tanah, dan orientasi bukaan.</p>
           </div>
+
+          <!-- Step 3 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="200">
-            <div class="proses-num" aria-hidden="true">3</div>
-            <h3 class="proses-title">Desain</h3>
-            <p class="proses-desc">Pengembangan gambar 2D, 3D visual realistis, dan gambar kerja teknis lengkap.</p>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">03</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 3</span>
+            <h3 class="proses-title">Desain &amp; 3D</h3>
+            <p class="proses-desc">Visualisasi 3D realistis, denah ruang, dan gambar kerja DED lengkap.</p>
           </div>
+
+          <!-- Step 4 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="300">
-            <div class="proses-num" aria-hidden="true">4</div>
-            <h3 class="proses-title">RAB</h3>
-            <p class="proses-desc">Rencana Anggaran Biaya yang transparan, detail material, dan penawaran resmi.</p>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">04</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 4</span>
+            <h3 class="proses-title">RAB &amp; SPK</h3>
+            <p class="proses-desc">Rincian anggaran biaya transparan, jadwal Kurva-S, dan kontrak resmi.</p>
           </div>
+
+          <!-- Step 5 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="400">
-            <div class="proses-num" aria-hidden="true">5</div>
-            <h3 class="proses-title">Pelaksanaan</h3>
-            <p class="proses-desc">Pembangunan fisik di bawah pengawasan ketat, terjadwal, dan laporan berkala.</p>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">05</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 5</span>
+            <h3 class="proses-title">Konstruksi Fisik</h3>
+            <p class="proses-desc">Pembangunan material SNI diawasi langsung oleh insinyur sipil.</p>
           </div>
+
+          <!-- Step 6 -->
           <div class="proses-step" data-aos="fade-up" data-aos-delay="500">
-            <div class="proses-num" aria-hidden="true">6</div>
+            <div class="proses-step-top">
+              <div class="proses-num-wrap">
+                <div class="proses-num" aria-hidden="true">06</div>
+              </div>
+            </div>
+            <span class="proses-stage-tag">Tahap 6</span>
             <h3 class="proses-title">Serah Terima</h3>
-            <p class="proses-desc">Quality control akhir, serah terima hasil proyek, dan sertifikat garansi resmi.</p>
+            <p class="proses-desc">Quality control akhir, penyerahan kunci, dan sertifikat garansi resmi.</p>
           </div>
         </div>
 
         <!-- Swipe Hint Indicator (Mobile Only) -->
         <div class="proses-swipe-hint d-md-none text-center text-muted small mt-3">
-          <i class="bi bi-arrow-left-right text-maroon me-1"></i> Geser ke samping untuk melihat langkah selanjutnya &rarr;
+          <i class="bi bi-arrow-left-right text-maroon me-1"></i> Geser ke samping untuk melihat langkah selanjutnya
+          &rarr;
         </div>
+
+        <!-- Bottom Trust & Micro-CTA Bar -->
+        <div class="proses-bottom-trust" data-aos="fade-up" data-aos-delay="200">
+          <div class="proses-bottom-text">
+            <i class="bi bi-patch-check-fill text-maroon"></i>
+            <div>
+              <span class="d-block fw-bold text-maroon-dark">Ingin mulai dari konsultasi awal dan survey lokasi
+                gratis?</span>
+              <small class="text-muted">Tim teknis Kontraktor Surabaya siap mengunjungi lokasi proyek Anda di Surabaya,
+                Sidoarjo, Gresik, Mojokerto &amp; Madura.</small>
+            </div>
+          </div>
+          <a href="https://wa.me/62088989643555?text=Halo%2C+saya+ingin+konsultasi+dan+survey+lokasi+proyek"
+            class="btn-gold d-inline-flex align-items-center gap-2 flex-shrink-0" id="proses-wa-cta" target="_blank"
+            rel="noopener noreferrer">
+            <i class="bi bi-whatsapp"></i> Jadwalkan Survey Gratis
+          </a>
+        </div>
+
       </div>
     </section><!-- /proses -->
 
@@ -707,7 +764,8 @@
           <!-- 01. Jasa Arsitek -->
           <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="0">
             <article class="service-card">
-              <a href="layanan/jasa-arsitek-surabaya.html" class="service-card-img" aria-label="Lihat Layanan Jasa Arsitek Surabaya">
+              <a href="layanan/jasa-arsitek-surabaya.html" class="service-card-img"
+                aria-label="Lihat Layanan Jasa Arsitek Surabaya">
                 <img src="assets/img/layanan/jasa-arsitek-rumah-mewah-surabaya.webp"
                   alt="Jasa arsitek Surabaya untuk desain rumah dan bangunan" loading="lazy" width="400" height="220"
                   onerror="this.src='assets/img/hero/hero.webp'">
@@ -729,7 +787,8 @@
           <!-- 02. Kontraktor Rumah -->
           <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
             <article class="service-card">
-              <a href="layanan/kontraktor-rumah-surabaya.html" class="service-card-img" aria-label="Lihat Layanan Kontraktor Rumah Surabaya">
+              <a href="layanan/kontraktor-rumah-surabaya.html" class="service-card-img"
+                aria-label="Lihat Layanan Kontraktor Rumah Surabaya">
                 <img src="assets/img/layanan/pembangunan-rumah-modern-surabaya.webp"
                   alt="Kontraktor rumah Surabaya, jasa bangun rumah dari nol" loading="lazy" width="400" height="220"
                   onerror="this.src='assets/img/hero/hero.webp'">
@@ -751,7 +810,8 @@
           <!-- 03. Kontraktor Bangunan -->
           <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
             <article class="service-card">
-              <a href="layanan/kontraktor-bangunan-surabaya.html" class="service-card-img" aria-label="Lihat Layanan Kontraktor Bangunan Surabaya">
+              <a href="layanan/kontraktor-bangunan-surabaya.html" class="service-card-img"
+                aria-label="Lihat Layanan Kontraktor Bangunan Surabaya">
                 <img src="assets/img/layanan/fasad-gedung-komersial-modern.webp"
                   alt="Kontraktor bangunan Surabaya untuk ruko, kantor, dan gedung komersial" loading="lazy" width="400"
                   height="220" onerror="this.src='assets/img/hero/hero.webp'">
@@ -773,7 +833,8 @@
           <!-- 04. Jasa Renovasi -->
           <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="0">
             <article class="service-card">
-              <a href="layanan/jasa-renovasi-surabaya.html" class="service-card-img" aria-label="Lihat Layanan Jasa Renovasi Bangunan">
+              <a href="layanan/jasa-renovasi-surabaya.html" class="service-card-img"
+                aria-label="Lihat Layanan Jasa Renovasi Bangunan">
                 <img src="assets/img/layanan/renovasi-bangunan-surabaya.webp"
                   alt="Jasa renovasi bangunan Surabaya, renovasi rumah dan gedung" loading="lazy" width="400"
                   height="220" onerror="this.src='assets/img/hero/hero.webp'">
@@ -795,7 +856,8 @@
           <!-- 05. Desain Interior -->
           <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
             <article class="service-card">
-              <a href="layanan/jasa-desain-interior-surabaya.html" class="service-card-img" aria-label="Lihat Layanan Jasa Desain Interior">
+              <a href="layanan/jasa-desain-interior-surabaya.html" class="service-card-img"
+                aria-label="Lihat Layanan Jasa Desain Interior">
                 <img src="assets/img/layanan/desain-interior-rumah-surabaya.webp"
                   alt="Jasa desain interior Surabaya untuk rumah, kantor, dan komersial" loading="lazy" width="400"
                   height="220" onerror="this.src='assets/img/hero/hero.webp'">
@@ -817,7 +879,8 @@
           <!-- 06. RAB & Estimasi Biaya -->
           <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
             <article class="service-card">
-              <a href="layanan/rab-estimasi-biaya-surabaya.html" class="service-card-img" aria-label="Lihat Layanan RAB dan Estimasi Biaya Bangunan">
+              <a href="layanan/rab-estimasi-biaya-surabaya.html" class="service-card-img"
+                aria-label="Lihat Layanan RAB dan Estimasi Biaya Bangunan">
                 <img src="assets/img/layanan/dokumen-rab-estimasi-biaya.webp"
                   alt="Jasa RAB dan estimasi biaya bangunan di Surabaya" loading="lazy" width="400" height="220"
                   onerror="this.src='assets/img/hero/hero.webp'">
@@ -877,7 +940,10 @@
                   </p>
                 </div>
                 <div class="testimonial-user">
-                  <div class="testimonial-avatar" aria-hidden="true">HG</div>
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    <img src="assets/img/person/erlang.webp" alt="Ir. Hendra Gunawan" width="48" height="48"
+                      loading="lazy" onerror="this.src='assets/img/favicon-logo.webp'">
+                  </div>
                   <div>
                     <div class="testimonial-name">Ir. Hendra Gunawan</div>
                     <div class="testimonial-project">Rumah Tinggal 2 Lantai — Surabaya Timur</div>
@@ -904,7 +970,10 @@
                   </p>
                 </div>
                 <div class="testimonial-user">
-                  <div class="testimonial-avatar" aria-hidden="true">SA</div>
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    <img src="assets/img/person/erlang.webp" alt="dr. Sylvia Anggraeni" width="48" height="48"
+                      loading="lazy" onerror="this.src='assets/img/favicon-logo.webp'">
+                  </div>
                   <div>
                     <div class="testimonial-name">dr. Sylvia Anggraeni</div>
                     <div class="testimonial-project">Renovasi &amp; Interior — Surabaya Barat</div>
@@ -931,7 +1000,10 @@
                   </p>
                 </div>
                 <div class="testimonial-user">
-                  <div class="testimonial-avatar" aria-hidden="true">AW</div>
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    <img src="assets/img/person/erlang.webp" alt="Antonius Wijaya" width="48" height="48" loading="lazy"
+                      onerror="this.src='assets/img/favicon-logo.webp'">
+                  </div>
                   <div>
                     <div class="testimonial-name">Antonius Wijaya</div>
                     <div class="testimonial-project">Pembangunan Ruko 3 Lantai — Surabaya Pusat</div>
@@ -958,7 +1030,10 @@
                   </p>
                 </div>
                 <div class="testimonial-user">
-                  <div class="testimonial-avatar" aria-hidden="true">RH</div>
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    <img src="assets/img/person/erlang.webp" alt="Bpk. Rahmat Hidayat, S.E." width="48" height="48"
+                      loading="lazy" onerror="this.src='assets/img/favicon-logo.webp'">
+                  </div>
                   <div>
                     <div class="testimonial-name">Bpk. Rahmat Hidayat, S.E.</div>
                     <div class="testimonial-project">Desain Villa &amp; Guest House — Mojokerto</div>
@@ -985,7 +1060,10 @@
                   </p>
                 </div>
                 <div class="testimonial-user">
-                  <div class="testimonial-avatar" aria-hidden="true">CN</div>
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    <img src="assets/img/person/erlang.webp" alt="Ibu Claudia Natasha" width="48" height="48"
+                      loading="lazy" onerror="this.src='assets/img/favicon-logo.webp'">
+                  </div>
                   <div>
                     <div class="testimonial-name">Ibu Claudia Natasha</div>
                     <div class="testimonial-project">Interior Resto &amp; Cafe — Sidoarjo</div>
@@ -1012,7 +1090,10 @@
                   </p>
                 </div>
                 <div class="testimonial-user">
-                  <div class="testimonial-avatar" aria-hidden="true">DP</div>
+                  <div class="testimonial-avatar" aria-hidden="true">
+                    <img src="assets/img/person/erlang.webp" alt="Bpk. Dimas Pratama, M.Sc." width="48" height="48"
+                      loading="lazy" onerror="this.src='assets/img/favicon-logo.webp'">
+                  </div>
                   <div>
                     <div class="testimonial-name">Bpk. Dimas Pratama, M.Sc.</div>
                     <div class="testimonial-project">Rumah Mewah 3 Lantai — Gresik</div>
@@ -1181,120 +1262,125 @@
     </section><!-- /portfolio -->
 
 
-    <!-- ══ 8. FAQ ══════════════════════════════════════════════════════════════ -->
+    <!-- ══ 8. FAQ (SPLIT 2-COLUMN ACCORDION) ════════════════════════════════════ -->
     <section id="faq" aria-labelledby="faq-heading">
       <div class="container">
-        <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
-          <div class="col-lg-7">
-            <p class="section-subtitle">FAQ</p>
-            <h2 id="faq-heading" class="section-title">Pertanyaan yang Sering Diajukan</h2>
-            <div class="divider-maroon mx-auto"></div>
-            <p class="section-desc mx-auto">Informasi seputar layanan, proses kerja, estimasi biaya, dan jangkauan area
-              jasa Kontraktor Surabaya.</p>
+        <div class="row align-items-start gy-3 gy-lg-5 gx-lg-5">
+
+          <!-- Left Column -->
+          <div class="col-lg-5 faq-split-left" data-aos="fade-right">
+            <span class="section-label mb-2"><i class="bi bi-question-circle-fill me-1"></i> FAQ</span>
+            <h2 id="faq-heading" class="faq-split-title">
+              Pertanyaan Seputar Jasa Arsitek &amp; <span>Kontraktor</span>
+            </h2>
+            <p class="faq-split-desc">
+              Masih ada pertanyaan seputar biaya, proses pembangunan, atau konsultasi proyek? Hubungi tim kami langsung
+              melalui WhatsApp.
+            </p>
+            <a href="https://wa.me/62088989643555?text=Halo%2C+saya+ingin+tanya+seputar+jasa+konstruksi"
+              class="btn-maroon-pill d-none d-lg-inline-flex" id="faq-wa-direct-btn" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-whatsapp"></i> Tanya Langsung
+            </a>
           </div>
-        </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-wrap accordion" id="faqAccordion">
+          <!-- Right Column: Card-Based Accordion -->
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="faq-custom-accordion accordion" id="faqAccordion">
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+              <!-- FAQ 1 (Open by default) -->
+              <div class="faq-card-item accordion-item border-0">
+                <h3 class="faq-card-header accordion-header">
+                  <button class="faq-card-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
                     aria-expanded="true" aria-controls="faq1" id="faq1-btn">
-                    Berapa biaya jasa kontraktor bangunan di Surabaya?
+                    <span>Berapa biaya jasa arsitek dan kontraktor rumah?</span>
+                    <span class="faq-icon-circle"><i class="bi bi-chevron-down"></i></span>
                   </button>
                 </h3>
                 <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Biaya bervariasi tergantung luas bangunan, spesifikasi material, dan kompleksitas desain. Kami
-                    menyediakan estimasi awal dan penyusunan RAB transparan sebelum proyek dimulai agar sesuai dengan
-                    anggaran Anda. Hubungi kami via WhatsApp untuk estimasi gratis.
+                  <div class="faq-card-body accordion-body border-0">
+                    Biaya jasa arsitek dan kontraktor bervariasi tergantung luas bangunan, kompleksitas desain, dan
+                    lingkup gambar kerja. Untuk mendapatkan estimasi tepat, siapkan ukuran lahan, luas bangunan yang
+                    diinginkan, dan kebutuhan ruang. Hubungi kami untuk konsultasi awal gratis.
                   </div>
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2" id="faq2-btn">
-                    Apakah melayani pembangunan rumah dari nol?
+              <!-- FAQ 2 -->
+              <div class="faq-card-item accordion-item border-0">
+                <h3 class="faq-card-header accordion-header">
+                  <button class="faq-card-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
+                    aria-expanded="false" aria-controls="faq2" id="faq2-btn">
+                    <span>Apa saja yang didapat dari layanan Kontraktor Surabaya?</span>
+                    <span class="faq-icon-circle"><i class="bi bi-chevron-down"></i></span>
                   </button>
                 </h3>
                 <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Ya, kami melayani pembangunan rumah dari nol mulai dari 1 lantai hingga 2 lantai dengan berbagai
-                    konsep: minimalis, modern, tropis, hingga mewah. Termasuk desain arsitektur, gambar kerja, dan
-                    konstruksi penuh.
+                  <div class="faq-card-body accordion-body border-0">
+                    Layanan satu pintu kami mencakup konsultasi awal, survey lokasi, desain 3D realistis, gambar kerja
+                    DED lengkap berstandar PBG, rincian RAB transparan tanpa biaya siluman, pelaksanaan konstruksi fisik
+                    material SNI, hingga sertifikat garansi resmi.
                   </div>
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3" id="faq3-btn">
-                    Apakah melayani renovasi rumah?
+              <!-- FAQ 3 -->
+              <div class="faq-card-item accordion-item border-0">
+                <h3 class="faq-card-header accordion-header">
+                  <button class="faq-card-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
+                    aria-expanded="false" aria-controls="faq3" id="faq3-btn">
+                    <span>Berapa lama proses pembangunan rumah?</span>
+                    <span class="faq-icon-circle"><i class="bi bi-chevron-down"></i></span>
                   </button>
                 </h3>
                 <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Ya. Kami melayani berbagai jenis renovasi: renovasi rumah total, renovasi fasad, renovasi dapur,
-                    kamar mandi, atap, plafon, hingga renovasi interior. Renovasi sebagian maupun total bisa kami
-                    tangani.
+                  <div class="faq-card-body accordion-body border-0">
+                    Durasi pengerjaan pembangunan rumah umumnya berkisar antara 4 hingga 8 bulan tergantung skala luasan
+                    dan kompleksitas arsitektur. Kami menerapkan manajemen jadwal Kurva-S yang disiplin dengan laporan
+                    progres berkala mingguan.
                   </div>
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4" id="faq4-btn">
-                    Apakah tersedia layanan RAB &amp; estimasi biaya?
+              <!-- FAQ 4 -->
+              <div class="faq-card-item accordion-item border-0">
+                <h3 class="faq-card-header accordion-header">
+                  <button class="faq-card-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
+                    aria-expanded="false" aria-controls="faq4" id="faq4-btn">
+                    <span>Apakah Kontraktor Surabaya melayani di luar kota?</span>
+                    <span class="faq-icon-circle"><i class="bi bi-chevron-down"></i></span>
                   </button>
                 </h3>
                 <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Ya, kami menyediakan layanan penyusunan Rencana Anggaran Biaya (RAB) yang transparan, akurat, dan
-                    terinci. RAB membantu Anda merencanakan anggaran sebelum proyek dimulai.
+                  <div class="faq-card-body accordion-body border-0">
+                    Ya. Berbasis di Surabaya Timur, kami melayani proyek pembangunan rumah tinggal, gedung komersial,
+                    dan renovasi di seluruh wilayah Surabaya, Sidoarjo, Gresik, Mojokerto, hingga Madura dengan survey
+                    lokasi langsung.
                   </div>
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5" id="faq5-btn">
-                    Apakah melayani Sidoarjo, Gresik, Mojokerto, dan Madura?
+              <!-- FAQ 5 -->
+              <div class="faq-card-item accordion-item border-0">
+                <h3 class="faq-card-header accordion-header">
+                  <button class="faq-card-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5"
+                    aria-expanded="false" aria-controls="faq5" id="faq5-btn">
+                    <span>Apa perbedaan kontraktor dan pemborong?</span>
+                    <span class="faq-icon-circle"><i class="bi bi-chevron-down"></i></span>
                   </button>
                 </h3>
                 <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Ya. Berbasis di Surabaya Timur, kami melayani proyek konstruksi dan renovasi di Surabaya, Sidoarjo,
-                    Gresik, Mojokerto, dan Madura. Hubungi kami untuk diskusi lebih lanjut.
+                  <div class="faq-card-body accordion-body border-0">
+                    Kontraktor resmi beroperasi di bawah badan hukum yang jelas, memiliki kontrak SPK resmi bermaterai,
+                    menyajikan RAB terinci per item pekerjaan, diawasi langsung oleh insinyur sipil berpengalaman, serta
+                    memberikan sertifikat garansi struktur dan retensi pemeliharaan resmi.
                   </div>
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6" id="faq6-btn">
-                    Apakah bisa konsultasi terlebih dahulu sebelum memutuskan?
-                  </button>
-                </h3>
-                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Tentu. Konsultasi awal gratis tanpa komitmen. Hubungi kami langsung via WhatsApp di nomor
-                    <strong>088989643555</strong> untuk mendiskusikan kebutuhan proyek Anda bersama tim kami.
-                  </div>
-                </div>
-              </div>
-
-            </div><!-- /faqAccordion -->
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </section><!-- /faq -->
 
@@ -1406,9 +1492,12 @@
 
           <h3 class="footer-heading" style="margin-top:1.5rem;">Artikel Populer</h3>
           <ul class="footer-links">
-            <li><a href="blog/inspirasi-desain-rumah-minimalis-surabaya.html"><i class="bi bi-chevron-right"></i> 15 Desain Rumah Minimalis</a></li>
-            <li><a href="blog/7-contoh-rumah-minimalis-surabaya-sukses.html"><i class="bi bi-chevron-right"></i> 7 Contoh Rumah Minimalis</a></li>
-            <li><a href="blog/tren-bangunan-komersial-surabaya.html"><i class="bi bi-chevron-right"></i> Tren Bangunan Komersial</a></li>
+            <li><a href="blog/inspirasi-desain-rumah-minimalis-surabaya.html"><i class="bi bi-chevron-right"></i> 15
+                Desain Rumah Minimalis</a></li>
+            <li><a href="blog/7-contoh-rumah-minimalis-surabaya-sukses.html"><i class="bi bi-chevron-right"></i> 7
+                Contoh Rumah Minimalis</a></li>
+            <li><a href="blog/tren-bangunan-komersial-surabaya.html"><i class="bi bi-chevron-right"></i> Tren Bangunan
+                Komersial</a></li>
           </ul>
         </div>
 
