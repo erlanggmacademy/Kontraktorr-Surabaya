@@ -24,19 +24,32 @@
   <link rel="icon" type="image/webp" href="assets/img/favicon-logo.webp">
   <link rel="apple-touch-icon" href="assets/img/favicon-logo.webp">
 
-  <!-- Google Fonts: Poppins -->
+  <!-- Google Fonts: Poppins (High-Performance Async Preload) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap">
+  <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
-    rel="stylesheet">
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap">
+  </noscript>
 
+  <!-- Critical Core CSS -->
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="assets/vendor/aos/aos.css">
-  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.min.css">
+
+  <!-- Non-Critical Vendor CSS (Deferred Loading to Eliminate Render-Blocking) -->
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css"></noscript>
+  <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css"></noscript>
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css"></noscript>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://kontraktorsurabaya.biz.id/#business","name":"Kontraktor Surabaya","description":"Jasa kontraktor Surabaya untuk pembangunan rumah, bangunan, renovasi, arsitektur dan desain interior berbasis Surabaya Timur.","url":"https://kontraktorsurabaya.biz.id/","telephone":"+62088989643555","address":{"@type":"PostalAddress","addressLocality":"Surabaya Timur","addressRegion":"Jawa Timur","addressCountry":"ID"},"areaServed":["Surabaya","Sidoarjo","Gresik","Mojokerto","Madura"],"serviceType":["Jasa Arsitek","Kontraktor Rumah","Kontraktor Bangunan","Renovasi Bangunan","Desain Interior","RAB & Estimasi Biaya"]},{"@type":"WebSite","@id":"https://kontraktorsurabaya.biz.id/#website","url":"https://kontraktorsurabaya.biz.id/","name":"Kontraktor Surabaya","inLanguage":"id"}]}
   </script>
@@ -49,8 +62,8 @@
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html"
         aria-label="Kontraktor Surabaya - Beranda">
-        <img src="assets/img/logo-header.webp" alt="Logo Kontraktor Surabaya" class="logo-img" height="54"
-          onerror="this.style.display='none'">
+        <img src="assets/img/logo-header.webp" alt="Logo Kontraktor Surabaya" class="logo-img" width="160" height="54"
+          fetchpriority="high" onerror="this.style.display='none'">
       </a>
 
       <!-- Custom Modern Hamburger Toggler -->
@@ -169,7 +182,7 @@
         <div class="col-lg-6 hero-building-col" data-aos="fade-left" data-aos-delay="150">
           <div class="hero-building-showcase">
             <img src="assets/img/hero/hero.webp" alt="Pembangunan rumah dan gedung modern oleh Kontraktor Surabaya"
-              class="hero-building-img" loading="eager" width="900" height="700">
+              class="hero-building-img" loading="eager" fetchpriority="high" width="900" height="700">
           </div>
         </div>
 
