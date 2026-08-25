@@ -1,32 +1,109 @@
 /**
  * main.js — Kontraktor Surabaya
  * Brand: Maroon | Platform: Bootstrap 5
+ * High Performance & GPU Optimized
  */
 
 (function () {
   "use strict";
 
-  /* ── Navbar & Back to top scroll effect ── */
+  /* ── DOM Elements ── */
   const navbar = document.getElementById("navbar");
   const bttElements = document.querySelectorAll("#back-to-top, #scroll-top-btn, .scroll-top");
+  const heroAnchor = document.querySelector('.nav-link[href="#hero"]');
+  const heroBg = document.querySelector(".hero-bg");
 
-  function onScroll() {
-    if (navbar) {
-      if (window.scrollY > 60) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    }
-    // Back to top visibility
-    bttElements.forEach((el) => {
-      el.classList.toggle("visible", window.scrollY > 350);
+  let isTicking = false;
+  let lastScrollY = 0;
+  let isDesktop = window.innerWidth >= 992;
+
+  // Window resize handler to update desktop status
+  window.addEventListener("resize", () => {
+    isDesktop = window.innerWidth >= 992;
+    cacheSectionOffsets();
+  }, { passive: true });
+
+  /* ── Cache Section Offsets for Fast ScrollSpy (Prevents Layout Thrashing) ── */
+  let cachedSections = [];
+  function cacheSectionOffsets() {
+    if (!heroAnchor) return;
+    const sectionEls = document.querySelectorAll("section[id]");
+    cachedSections = Array.from(sectionEls).map((sec) => {
+      const top = sec.offsetTop;
+      const height = sec.offsetHeight;
+      const id = sec.getAttribute("id");
+      const link = document.querySelector(`.nav-link[href="#${id}"]`);
+      return { id, top, height, link };
     });
   }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
 
-  /* ── Back to top click ── */
+  // Initial cache after DOM & styles ready
+  if (document.readyState === "complete") {
+    cacheSectionOffsets();
+  } else {
+    window.addEventListener("load", cacheSectionOffsets, { passive: true });
+  }
+
+  /* ── Unified High-Performance Scroll Handler (requestAnimationFrame) ── */
+  function onScrollTick() {
+    const scrollY = lastScrollY;
+
+    // 1. Navbar & Back to Top Toggle
+    if (navbar) {
+      if (scrollY > 50) {
+        if (!navbar.classList.contains("scrolled")) navbar.classList.add("scrolled");
+      } else {
+        if (navbar.classList.contains("scrolled")) navbar.classList.remove("scrolled");
+      }
+    }
+
+    const bttVisible = scrollY > 350;
+    bttElements.forEach((el) => {
+      el.classList.toggle("visible", bttVisible);
+    });
+
+    // 2. Active Nav Link on Scroll (Homepage only)
+    if (heroAnchor && cachedSections.length > 0) {
+      const navLinks = document.querySelectorAll(".nav-link[href^='#']");
+      if (scrollY < 180) {
+        navLinks.forEach((l) => l.classList.remove("active"));
+        heroAnchor.classList.add("active");
+      } else {
+        const checkPos = scrollY + 130;
+        for (let i = 0; i < cachedSections.length; i++) {
+          const sec = cachedSections[i];
+          if (checkPos >= sec.top && checkPos < sec.top + sec.height) {
+            if (sec.link && !sec.link.classList.contains("active")) {
+              navLinks.forEach((l) => l.classList.remove("active"));
+              sec.link.classList.add("active");
+            }
+            break;
+          }
+        }
+      }
+    }
+
+    // 3. Hero Parallax — ONLY ON DESKTOP (Disabled on mobile to ensure 60fps smooth scroll)
+    if (isDesktop && heroBg && scrollY < 900) {
+      heroBg.style.transform = `translate3d(0, ${scrollY * 0.25}px, 0) scale(1.05)`;
+    }
+
+    isTicking = false;
+  }
+
+  window.addEventListener("scroll", () => {
+    lastScrollY = window.scrollY;
+    if (!isTicking) {
+      window.requestAnimationFrame(onScrollTick);
+      isTicking = true;
+    }
+  }, { passive: true });
+
+  // Initial trigger
+  lastScrollY = window.scrollY;
+  onScrollTick();
+
+  /* ── Back to Top Click ── */
   bttElements.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
@@ -34,13 +111,15 @@
     });
   });
 
-  /* ── AOS Init ── */
+  /* ── AOS Init (Optimized for Mobile Performance) ── */
   if (typeof AOS !== "undefined") {
     AOS.init({
-      duration: 700,
+      duration: 650,
       easing: "ease-out-cubic",
       once: true,
-      offset: 80,
+      offset: 50,
+      debounceDelay: 50,
+      throttleDelay: 99,
     });
   }
 
@@ -64,14 +143,12 @@
   const isotopeGrid = document.querySelector(".portfolio-grid");
   if (isotopeGrid && typeof Isotope !== "undefined") {
     let iso;
-    // Wait until images are loaded
     if (typeof imagesLoaded !== "undefined") {
       imagesLoaded(isotopeGrid, function () {
         iso = new Isotope(isotopeGrid, {
           itemSelector: ".portfolio-item-wrap",
           layoutMode: "fitRows",
         });
-        // Filter buttons
         const filterBtns = document.querySelectorAll(".filter-btn");
         filterBtns.forEach((btn) => {
           btn.addEventListener("click", function () {
@@ -84,49 +161,18 @@
     }
   }
 
-  /* ── Active nav link on scroll (Homepage only) ── */
-  const heroAnchor = document.querySelector('.nav-link[href="#hero"]');
-  if (heroAnchor) {
-    const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll(".nav-link[href^='#']");
-
-    function updateActiveNav() {
-      const scrollPosition = window.scrollY;
-
-      // At the top of the page, ensure hero / Beranda is active
-      if (scrollPosition < 180) {
-        navLinks.forEach((l) => l.classList.remove("active"));
-        heroAnchor.classList.add("active");
-        return;
-      }
-
-      const scrollY = scrollPosition + 120;
-      sections.forEach((sec) => {
-        const top = sec.offsetTop;
-        const height = sec.offsetHeight;
-        const id = sec.getAttribute("id");
-        const link = document.querySelector(`.nav-link[href="#${id}"]`);
-        if (link) {
-          if (scrollY >= top && scrollY < top + height) {
-            navLinks.forEach((l) => l.classList.remove("active"));
-            link.classList.add("active");
-          }
-        }
-      });
-    }
-    window.addEventListener("scroll", updateActiveNav, { passive: true });
-    updateActiveNav();
-  }
-
-  /* ── Smooth scroll for anchor links ── */
+  /* ── Smooth Scroll for Anchor Links ── */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      const target = document.querySelector(this.getAttribute("href"));
+      const href = this.getAttribute("href");
+      if (href === "#" || href === "") return;
+      const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         const offset = 80;
         const top = target.getBoundingClientRect().top + window.scrollY - offset;
         window.scrollTo({ top, behavior: "smooth" });
+
         // Close mobile offcanvas drawer if open
         const navOffcanvas = document.getElementById("navOffcanvas");
         if (navOffcanvas && typeof bootstrap !== "undefined" && bootstrap.Offcanvas) {
@@ -135,23 +181,9 @@
             instance.hide();
           }
         }
-        const navCollapse = document.querySelector(".navbar-collapse");
-        if (navCollapse && navCollapse.classList.contains("show")) {
-          const toggler = document.querySelector(".navbar-toggler");
-          if (toggler) toggler.click();
-        }
       }
     });
   });
-
-  /* ── Hero parallax ── */
-  const heroBg = document.querySelector(".hero-bg");
-  if (heroBg) {
-    window.addEventListener("scroll", () => {
-      const scrollY = window.scrollY;
-      heroBg.style.transform = `scale(1.05) translateY(${scrollY * 0.3}px)`;
-    }, { passive: true });
-  }
 
   /* ── Testimonials Swiper Init ── */
   if (typeof Swiper !== "undefined") {
@@ -189,7 +221,6 @@
       const isExpanded = this.getAttribute("aria-expanded") === "true";
       const answer = this.nextElementSibling;
 
-      // Close other open answers
       faqButtons.forEach((otherBtn) => {
         if (otherBtn !== this) {
           otherBtn.setAttribute("aria-expanded", "false");
@@ -209,7 +240,7 @@
     });
   });
 
-  /* ── Entire Service Card Clickable ── */
+  /* ── Service Card Clickable ── */
   const serviceCards = document.querySelectorAll(".service-card");
   serviceCards.forEach((card) => {
     card.addEventListener("click", function (e) {
@@ -222,4 +253,3 @@
   });
 
 })();
-
