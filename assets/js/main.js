@@ -139,25 +139,29 @@
     new PureCounter();
   }
 
-  /* ── Portfolio Isotope Filter ── */
+  /* ── Portfolio / Blog Isotope Filter ── */
   const isotopeGrid = document.querySelector(".portfolio-grid");
   if (isotopeGrid && typeof Isotope !== "undefined") {
     let iso;
-    if (typeof imagesLoaded !== "undefined") {
-      imagesLoaded(isotopeGrid, function () {
-        iso = new Isotope(isotopeGrid, {
-          itemSelector: ".portfolio-item-wrap",
-          layoutMode: "fitRows",
-        });
-        const filterBtns = document.querySelectorAll(".filter-btn");
-        filterBtns.forEach((btn) => {
-          btn.addEventListener("click", function () {
-            filterBtns.forEach((b) => b.classList.remove("active"));
-            this.classList.add("active");
-            iso.arrange({ filter: this.dataset.filter });
-          });
+    const initIsotope = () => {
+      iso = new Isotope(isotopeGrid, {
+        itemSelector: ".portfolio-item-wrap",
+        layoutMode: "fitRows",
+      });
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          this.classList.add("active");
+          iso.arrange({ filter: this.dataset.filter });
         });
       });
+    };
+
+    if (typeof imagesLoaded !== "undefined") {
+      imagesLoaded(isotopeGrid, initIsotope);
+    } else {
+      initIsotope();
     }
   }
 
